@@ -1,0 +1,113 @@
+li a {
+	font-size: 20px;
+	padding: 0 51px 0 0;
+	text-decoration: none;
+}
+.menu ul li {
+	display: inline;
+}
+li a {
+	font-size: 20px;
+	padding: 0 51px 0 0;
+	text-decoration: none;
+}
+li a:hover {
+	color: #f00;
+}
+.jpMenu .open{display: none;}
+.sub-menu{display: none;}
+
+.jpMenu > .menu-item-has-children:hover > ul{display: block;}
+
+.menu-item-has-children {
+	position: relative;
+}
+.sub-menu {
+	background: none repeat scroll 0 0 #666;
+	left: 0;
+	position: absolute;
+	text-align: left;
+	top: 25px;
+	width: 257px;
+}
+.sub-menu li {
+	display: block;
+	padding: 5px 0;
+	width: 100%;
+}
+.sub-menu li a {
+	margin: 0;
+	padding: 5px 0;
+}
+.jpMenu.open li{
+	display: block !important;
+}
+.jpMenu.open {
+	clear: both;
+	padding: 0;
+}
+.open span {
+	background: none repeat scroll 0 0 #f00;
+	display: block;
+	float: right;
+	height: 20px;
+	width: 20px;
+}
+/* TABLET RESPONSIVE */
+@media only screen and (max-width:800px) {
+	
+	/* MAIN MENU-V01 */
+	/* Level 1 */
+	.MenuIcon {
+		background: url("img/menu_back.png") no-repeat scroll left top rgba(0, 0, 0, 0);
+		display: block;
+		float: left;
+		height: 51px;
+		width: 70px;
+	}
+	.jpMenu{
+		display:none;
+	}
+	.jpMenu > .menu-item-has-children > span {
+		display:block;
+		right:8px;
+		position:absolute;
+		width:40px;
+		height:40px;
+		background:#f00;
+		background-repeat:no-repeat;
+		top: 8px;
+	}
+	.jpMenu > .menu-item-has-children:hover > ul{
+		display: none;
+	}
+	.menu ul li {
+		background: none repeat scroll 0 0 #666;
+		border-bottom: 1px solid #fff;
+		display: block;
+		float: left;
+		padding: 17px 0;
+		width: 100%;
+	}
+
+	.sub-menu {
+		float: left;
+		margin: 17px 0 0;
+		padding: 0;
+		position: inherit;
+		top: inherit;
+		width: 100%;
+	}
+
+	.sub-menu > li {
+		padding: 10px 0 !important;
+	}
+	.sub-menu ul li {
+		background: none repeat scroll 0 0 #666;
+		border-bottom: 1px solid #fff;
+		display: block;
+		padding: 16px 10px;
+	}
+
+	
+}
