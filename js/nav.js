@@ -22,12 +22,11 @@ $(document).ready(function()
 		$('.sub-menu .menu-item-has-children a').hover(function()
 		{
 			$(this).closest('.item-with-ul').find('ul').toggle();
-			
+
 		});	
 	 }
 	$('.sub-menu .menu-item-has-children').each(function()
 	{
-		//$(this).find('a:not(.sub-menu .sub-menu a)').prepend('<span class="plus"></span>');
 		$(this).prepend('<span class="plus"></span>');
 	});
 
