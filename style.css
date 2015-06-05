@@ -1,0 +1,120 @@
+@charset "utf-8";
+/* CSS Document */
+/* CSS reset */
+body * {-webkit-transition: all 0.4s;-moz-transition: all 0.4s;-ms-transition: all 0.4s;-o-transition: all 0.4s;transition: all 0.4s;}
+body {font-family: 'Open Sans', sans-serif;}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td, a {
+margin:0;padding:0;	-webkit-font-smoothing: antialiased;font-family: 'Open Sans', sans-serif;color:#333333;}
+::selection {background: #fbdd12;color:#252525;}
+::-moz-selection {background: #fbdd12;color:#252525;}
+::-webkit-selection {background: #fbdd12;color:#252525;}
+html, body {	margin:0;padding:0;	height:100%;}
+img {max-width:100%;height:auto;}
+a {	text-decoration:none;	outline:none;}
+table {	border-collapse:collapse;border-spacing:0;}
+fieldset, img {border:0;}
+address, caption, cite, code, dfn, th, var {font-style:normal;font-weight:normal;}
+ol, ul, li {list-style:none;}
+caption, th {text-align:left;}
+h1, h2, h3, h4, h5, h6 {font-size:100%;font-weight:normal;-webkit-font-smoothing: antialiased;}
+q:before, q:after {content:'';}
+abbr, acronym {border:0;}
+.clear {clear:both;}
+
+::-webkit-input-placeholder {opacity: 1 !important;color:#acacac;}
+:-moz-placeholder {opacity: 1 !important;color:#acacac;}
+::-moz-placeholder {opacity: 1 !important;color:#acacac;}
+:-ms-input-placeholder {opacity: 1 !important;color:#acacac;}
+*, :before, *:after {	-webkit-box-sizing: border-box;	-moz-box-sizing: border-box;	box-sizing: border-box;}
+
+/*** Fonts ***/
+
+
+@font-face {
+ font-family: 'Open Sans';
+ font-style: normal;
+ font-weight: 400;
+ src: local('Open Sans'), local('OpenSans'), url(http://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3VtXRa8TVwTICgirnJhmVJw.woff2) format('woff2'), url(http://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+@font-face {
+ font-family: 'Open Sans';
+ font-style: normal;
+ font-weight: 700;
+ src: local('Open Sans Bold'), local('OpenSans-Bold'), url(http://fonts.gstatic.com/s/opensans/v13/k3k702ZOKiLJc3WVjuplzOgdm0LZdjqr5-oayXSOefg.woff2) format('woff2'), url(http://fonts.gstatic.com/s/opensans/v13/k3k702ZOKiLJc3WVjuplzHhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+}
+@font-face {
+ font-family: 'Oswald';
+ font-style: normal;
+ font-weight: 400;
+ src: local('Oswald Regular'), local('Oswald-Regular'), url(http://fonts.gstatic.com/s/oswald/v10/pEobIV_lL25TKBpqVI_a2w.woff2) format('woff2'), url(http://fonts.gstatic.com/s/oswald/v10/-g5pDUSRgvxvOl5u-a_WHw.woff) format('woff');
+}
+@font-face {
+ font-family: 'Oswald';
+ font-style: normal;
+ font-weight: 700;
+ src: local('Oswald Bold'), local('Oswald-Bold'), url(http://fonts.gstatic.com/s/oswald/v10/bH7276GfdCjMjApa_dkG6VtXRa8TVwTICgirnJhmVJw.woff2) format('woff2'), url(http://fonts.gstatic.com/s/oswald/v10/bH7276GfdCjMjApa_dkG6T8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+
+/*** Fonts Ends Here ***/
+
+
+header {float: left; width:100%;}
+
+.navigation {float:left;width:100%;background:#252525;border-bottom:3px solid #fbdd1b;}
+.navigation ul {float:left;	width:100%;}
+.navigation ul li {float:left; display: inline;}
+.navigation ul li a {color:#ffffff;	font-family: 'Oswald';	font-size:17px;	text-transform:uppercase;padding:15px;float:left;}
+.navigation ul li a:hover {color:#252525;background:#fbdd12;}
+.current_page_item a{color:#252525 !important;background:#fbdd12;}
+.navigate .open{display: none;}
+.sub-menu{display: none;}
+.navigate > .menu-item-has-children:hover > ul{display: block;}
+.menu-item-has-children {position: relative;}
+.sub-menu {background:#252525;left: 0;position: absolute;text-align: left;top: 55px;width: 280px !important;  z-index:999999999999999999999999999 !important;}
+.sub-menu li {display: block;padding:0;width: 100% !important;}
+.sub-menu li a {margin: 0;padding: 5px 0; width:100% !important; font-size:14px !important; border-bottom:1px solid #303030;}
+.navigate.open li{display: block !important;}
+.navigate.open {clear: both;padding: 0;}
+.MenuIcon{ display:none;}
+.current-menu-item a{color:#ffffff !important;background:#252525;}
+.current-menu-item a:hover{ color:#252522 !important;}
+
+.sub-menu .sub-menu{left: 280px; top: 0px;}
+
+.plus{right:2%;position:absolute;width:40px;height:40px;display: none;
+background:url(images/dpDownArrow.png) no-repeat center center; top:0px; cursor:pointer;}
+
+.sub-menu .menu-item-has-children a {background-image: url(images/dpDownArrow.png); background-position: 90% center; background-repeat: no-repeat;}
+.sub-menu .menu-item-has-children a:hover {background-image: url(images/dpDownArrow.png); background-position: 90% center; background-repeat: no-repeat;}
+.sub-menu .menu-item-has-children ul li a{ background-image: none;}
+.sub-menu .menu-item-has-children ul li a:hover{ background-image: none;}
+
+
+
+
+@media only screen and (max-width:800px) {
+
+
+.MenuIcon {display: block;float: left;height: 51px;width: 100%; color:#fff; cursor:pointer;
+padding:15px 2%;}
+.menuImg{ width:40px; float: right;}
+.MenuIcon span{ float:left; width:100%;height:4px; background:#fbdd12; margin:1px 0;}
+.navigate{display:none;}
+.navigate li { width: 100%;}
+.navigation ul li a{ width: 100%; font-size:13px; padding:10px 2%; border-bottom:1px solid #303030;}
+.navigate .menu-item-has-children > span {display:block;right:2%;position:absolute;width:40px;height:40px;
+background:url(images/dpDownArrow.png) no-repeat center center; top:0px; cursor:pointer;}
+.navigate .menu-item-has-children:hover > ul{display: none;}
+.menu ul li {background:#666;border-bottom: 1px solid #fff;display: block;float: left;padding: 17px 0;width: 100%;}
+.sub-menu {float: left;margin:0;padding: 0;position: inherit;top: inherit;width: 100% !important;}
+.sub-menu li {width:100%;padding:0%;}
+.sub-menu li a{width:100%;padding:10px 5% !important; background:#303030; border-bottom:1px solid #252525 !important;}
+.sub-menu ul li {background: none repeat scroll 0 0 #666;display: block;padding: 16px 10px;}
+.sub-menu .sub-menu {float: left; position: static; padding: 0; margin: 0;}
+.sub-menu .sub-menu li{ padding: 0; margin: 0;}
+.sub-menu .sub-menu li a { padding-left: 9%!important; background: #414141;}
+.sub-menu .menu-item-has-children a{ background-image: none;}
+.sub-menu .menu-item-has-children a:hover{ background-image: none;}
+}
+
+
